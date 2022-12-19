@@ -152,15 +152,51 @@ header navigation
 .dashboard {
     grid-area: dashboard;
     display: grid;
-    grid-template-rows: 1fr 4fr 5fr;
+    grid-template-rows: 48px 4fr 5fr;
     grid-template-areas: 
     "dashboard-logo"
     "dashboard-navigation"
     "dashboard-system";
+    gap: 24px;
 
     background-color: #60a5fa;
+    padding: 1rem;
 }
+.dashboard-logo {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 24px;
+    align-items: center;
+}
+.dashboard-logo p {
+    margin: 0;
 
+    color: #eff6ff;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+.dashboard ul {
+    padding: 0;
+}
+.dashboard li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    align-items: center;
+    gap: 24px;
+
+    line-height: 1rem;
+
+}
+.dashboard li img {
+    width: 24px;
+    height: 24px;
+}
+.dashboard li p {
+    color: #eff6ff;
+    font-size: 1.2rem;
+}
 
 .project {
     grid-area: projects;
