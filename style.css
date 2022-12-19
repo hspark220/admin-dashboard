@@ -141,7 +141,7 @@ header navigation
 .header .navigation li {
     display: grid;
     align-items: center;
-    background-color: #60a5fa;
+    background-color: #2563eb;
     height: 40px;
     width: 100px;
     
@@ -166,7 +166,7 @@ header navigation
     "dashboard-system";
     gap: 24px;
 
-    background-color: #60a5fa;
+    background-color: #2563eb;
     padding: 1rem;
 }
 .dashboard-logo {
