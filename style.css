@@ -1,4 +1,11 @@
+/* 
+font import
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,900&display=swap');
 
+* {
+    font-family: Roboto, san-serif;
+}
 
 /* 
 Grid and background color
@@ -15,68 +22,131 @@ body {
     padding: 0;
     margin: 0;
 
-    background-color: #e0f2fe;
+    background-color: #dbeafe;
 }
-
+/* 
+header
+*/
 .header {
     grid-area: header;
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(10, 1fr);
+    grid-template: .5fr 1fr / repeat(10, 1fr);
+    align-items: center;
 
-    background-color: #f0f9ff;
+    padding: 1rem 3rem;
+
+
+    background-color: #eff6ff;
 }
+/* 
+header search bar
+*/
 .header .search-bar {
-    grid-area: 1 / 1 / 2 / 7;
+    grid-area: 1 / 1 / 2 / 8;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 15px;
+
+    
+
 }
-.header .notification {
-    grid-area: 1 / 8 / 2 / 9;
+.header .search-bar .bar {
+    grid-column: 2;
+
+    width: 80%;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+
+    background-color: #dbeafe;
 }
-.header .logo {
-    grid-area: 1 / 9 / 2 / 10;
+
+.header .menu {
+    grid-area: 1 / 8 / 2 / 11;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
 }
+
 .header .logo img {
     height: 2rem;
     width: auto;
 }
 .header .name {
-    grid-area: 1 / 10 / 2 / 11;
+    grid-column: 3 / 6;
 }
+.header .name p {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+/* 
+header banner
+*/
 .header .banner {
     grid-area: 2 / 1 / 3 / 5;
     display: grid;
-    grid-template: 1fr 1fr / 1fr 3fr;
+    grid-template: 1fr 1fr / 1fr 4fr;
     grid-template-areas:
     "logo msg"
     "logo name";
 }
 .header .banner img {
     grid-area: logo;
+    align-self: center;
     height: 3rem;
     width: auto;
+
 }
 .header .banner p {
     grid-area: msg;
+
+    font-weight: 700;
+    align-self: center;
 }
 .header .banner h4 {
     grid-area: name;
+
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 .header .banner p, .header .banner h4 {
     padding: 0;
     margin: 0;
 }
+/* 
+header navigation
+*/
 .header .navigation {
     grid-area: 2 / 7 / 3 / 11;
 }
 .header .navigation ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: space-evenly;
+    justify-items: center;
+    gap: 20px;
+
     padding: 0;
     margin: 0;
+    
 }
 .header .navigation li {
+    display: grid;
+    align-items: center;
+    background-color: #60a5fa;
+    height: 40px;
+    width: 100px;
+    
+
+    border-radius: 2rem;
+    
+    font-size: 1rem;
+    font-weight: 700;
+    color: #eff6ff;
     list-style: none;
     text-align: center;
+
 }
 
 .dashboard {
@@ -88,7 +158,7 @@ body {
     "dashboard-navigation"
     "dashboard-system";
 
-    background-color: #0ea5e9;
+    background-color: #60a5fa;
 }
 
 
