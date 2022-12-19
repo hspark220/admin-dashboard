@@ -61,6 +61,10 @@ header search bar
 
     background-color: #dbeafe;
 }
+.header .search-bar img {
+    width: 30px;
+    height: 30px;
+}
 
 .header .menu {
     grid-area: 1 / 8 / 2 / 11;
@@ -68,7 +72,10 @@ header search bar
     grid-template-columns: repeat(5, 1fr);
     place-items: center;
 }
-
+.header .notification img {
+    width: 24px;
+    height: 24px;
+}
 .header .logo img {
     height: 2rem;
     width: auto;
