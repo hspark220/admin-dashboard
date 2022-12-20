@@ -17,8 +17,8 @@ body {
     "dashboard header"
     "dashboard projects";
    
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     padding: 0;
     margin: 0;
 
@@ -28,7 +28,7 @@ a {
     text-decoration: none;
 }
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 /* 
 header
@@ -169,7 +169,7 @@ header navigation
     "dashboard-logo"
     "dashboard-navigation"
     "dashboard-system";
-    gap: 24px;
+    gap: 20px;
 
     background-color: #2563eb;
     padding: 1rem;
@@ -177,7 +177,7 @@ header navigation
 .dashboard-logo {
     display: grid;
     grid-template-columns: 48px 1fr;
-    gap: 24px;
+    gap: 20px;
     align-items: center;
 }
 .dashboard-logo p {
@@ -185,7 +185,7 @@ header navigation
 
     color: #eff6ff;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 
 }
 .dashboard ul {
@@ -224,7 +224,7 @@ project
 .project {
     grid-area: projects;
     display: grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template: 1fr 1fr / 2.5fr 1fr;
     grid-template-areas:
     "project announcements"
     "project trending";
@@ -271,6 +271,12 @@ projects section
 }
 .projects .desc h3 {
     margin: 0;
+    font-size: 1.1rem;
+}
+.projects .desc p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #6b7280;
 }
 .projects .icons {
     grid-area: icons;
