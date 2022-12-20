@@ -28,7 +28,7 @@ a {
     text-decoration: none;
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 /* 
 header
@@ -242,7 +242,7 @@ projects section
     "project3 project4"
     "project5 project6";
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0 20px 20px;
 }
 .project .projects h2 {
     grid-area: heading;
