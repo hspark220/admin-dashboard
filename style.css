@@ -60,12 +60,14 @@ header search bar
     grid-column: 2;
 
     width: 80%;
-    height: 30px;
+    height: 24px;
     padding: 0;
+    padding-left: 10px;
     margin: 0;
     border-radius: 15px;
 
     background-color: #dbeafe;
+
 }
 .header .search-bar img {
     width: 30px;
