@@ -12,7 +12,7 @@ Grid and background color
 */
 body {
     display: grid;
-    grid-template: 1fr 4fr / 1fr 3fr;
+    grid-template: 1fr 4fr / 1fr 4fr;
     grid-template-areas:
     "dashboard header"
     "dashboard projects";
@@ -26,6 +26,9 @@ body {
 }
 a {
     text-decoration: none;
+}
+h2 {
+    font-size: 1.5rem;
 }
 /* 
 header
@@ -285,11 +288,30 @@ announcement section
 */
 .project .announcements {
     grid-area: announcements;
-}
+    display: grid;
+    grid-template-rows: 24px 1fr;
+    gap: 20px;
 
+    padding: 20px;
+
+}
+.project h2 {
+    margin: 0;
+}
+.project .content {
+    background-color: #eff6ff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+}
 /* 
 trending section
 */
 .project .trending {
     grid-area: trending;
+    display: grid;
+    grid-template-rows: 24px 1fr;
+    gap: 20px;
+
+    padding: 20px;
+
 }
